@@ -1,9 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import Filters from "@/components/ui/Filters";
 import GameCard from "@/components/GameCard";
-import Link from "next/link";
 
 function GameMenu({ categories, allGames }: GameMenuProps) {
   const [activeFilter, setActiveFilter] = useState("all");

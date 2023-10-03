@@ -26,7 +26,7 @@ function Dropdown({ allGames }: DropdownProps) {
     <div className="relative">
       <SearchInput handleChange={handleInputChange} />
       {filteredGames.length > 0 && (
-        <ul className="flex flex-col gap-2 z-30 absolute bottom-[-310px] h-[300px] w-[300px] px-[10px] py-[10px] overflow-scroll border-1 bg-white text-tinted-black">
+        <ul className="flex flex-col gap-2 z-30 absolute bottom-[-310px] right-0 h-[300px] w-[300px] px-[10px] py-[10px] overflow-scroll border-1 bg-white text-tinted-black">
           {filteredGames.map((game) => {
             return <GameCard isSmall={true} key={game.code} gameData={game} />;
           })}

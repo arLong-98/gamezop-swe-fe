@@ -1,9 +1,8 @@
 import GameMenu from "@/components/ui/GameMenu";
+import { devURL } from "@/config/home";
 
 async function fetchGameData() {
-  const res = await fetch(
-    "https://dev-meteor.gamezop.com/v1/games/list?id=cfuucl7YgA&lang=en"
-  );
+  const res = await fetch(devURL);
 
   const resData = await res.json();
   return resData.data;

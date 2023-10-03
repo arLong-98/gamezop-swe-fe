@@ -1,7 +1,7 @@
+import { devURL } from "@/config/home";
+
 async function fetchGameOfTheWeekData() {
-  const res = await fetch(
-    "https://dev-meteor.gamezop.com/v1/games/list?id=cfuucl7YgA&lang=en"
-  );
+  const res = await fetch(devURL);
 
   const resData = await res.json();
   const {

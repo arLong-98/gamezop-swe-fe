@@ -1,13 +1,12 @@
+import { Suspense } from "react";
 import GameCard from "@/components/GameCard";
 import CategorySection from "@/components/ui/CategorySection";
 import GameMenuContainer from "@/components/ui/GameMenuContainer";
 import GameOfTheWeek from "@/components/ui/GameOfTheWeek";
-import { Suspense } from "react";
+import { devURL } from "@/config/home";
 
 async function fetchData() {
-  const res = await fetch(
-    "https://dev-meteor.gamezop.com/v1/games/list?id=cfuucl7YgA&lang=en"
-  );
+  const res = await fetch(devURL);
 
   const resData = await res.json();
   return resData;

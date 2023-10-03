@@ -2,11 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-1 - Execute **pnpm install** on terminal to install all the dependencies.
+1 - Execute **pnpm install** on terminal to install all the dependencies. 
 
-2 - Execute **pnpm dev** to run the dev server.
+2 - Execute **pnpm dev** to run the dev server. 
 
-3 - Open the browser and type in the **localhost:3000** in the address bar to run the application on the local machine.
+3 - Open the browser and type in the **localhost:3000** in the address bar to run the application on the local machine. 
 
 ## Development Journey
 

@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={clsx(
           inter.className,
-          "min-h-screen max-w-[1440px] mx-auto bg-background font-sans antialiased"
+          "min-h-screen bg-bodyBG font-sans antialiased"
         )}
       >
         {children}

@@ -35,8 +35,12 @@ function GameMenu({ categories, allGames }: GameMenuProps) {
           return <GameCard key={game.code} gameData={game} />;
         })}
         <Link href={`/${activeFilter}`}>
-          <div className="w-[187px] h-[278px] bg-blurGradient flex items-center justify-center">
-            <p className="text-3xl">View More</p>
+          <div className="p-3">
+            <div className="group transition-transform w-[187px] h-[278px] bg-blurGradient flex items-center justify-center">
+              <p className="text-3xl group-hover:scale-90 duration-200">
+                View More
+              </p>
+            </div>
           </div>
         </Link>
       </div>

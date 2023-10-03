@@ -30,6 +30,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 10 - Added server and client components as per the requirement. 
 
-11 - Added PWA functionality by registering a service worker, adding a manifest.json file and the corresponding link tag to make the application downloadable on the system. 
+11 - Added PWA functionality by registering a service worker, adding a manifest.json file and the corresponding link tag to make the application downloadable on the system and cache the index route. 
 
 12 - Added suspense to custom UI components to leverage streaming data while rest of the page is shown to the user for a better UX.

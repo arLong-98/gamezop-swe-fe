@@ -11,14 +11,14 @@ function Header({ navItems }: HeaderProps) {
       <div className="flex justify-between py-7">
         <Link href={"/"}>
           <Image
-            className="hidden md:block"
+            className="hidden tablet:block"
             width={180}
             height={50}
             src={gamezopLogo}
             alt="gamezop"
           />
           <Image
-            className="block md:hidden"
+            className="block tablet:hidden"
             width={50}
             height={50}
             src={gamezopLogoMobile}

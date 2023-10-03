@@ -30,7 +30,7 @@ function GameMenu({ categories, allGames }: GameMenuProps) {
         categories={categories}
         activeFilter={activeFilter}
       />
-      <div className="no-scrollbar flex flex-col tablet:flex-row tablet:max-laptop:overflow-scroll tablet:gap-x-[20px] laptop:flex-wrap laptop:gap-x-[24px] gap-y-[30px] mt-10">
+      <div className="no-scrollbar flex flex-col tablet:flex-row tablet:max-laptop:overflow-y-hidden tablet:max-laptop:overflow-x-scroll tablet:gap-x-[20px] laptop:flex-wrap laptop:gap-x-[24px] gap-y-[30px] mt-10">
         {renderedList.length > 0 &&
           renderedList.slice(0, 11).map((game, index) => {
             return <GameCard key={index} gameData={game} />;

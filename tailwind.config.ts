@@ -26,6 +26,14 @@ const config: Config = {
       errorRed: "#E97061",
       veryLightGrey: "#eeeeee",
     },
+    fontSize:{
+      xl:['18px','1.5'],
+      '2xl':['20px','1.5'],
+      '3xl':['25px','1.5'],
+      '4xl':['35px','1.5'],
+      '5xl':['50px','1.5'],
+
+    },
     extend: {
       backgroundImage: {
         blurGradient:

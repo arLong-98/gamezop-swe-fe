@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={clsx(
           inter.className,
-          "min-h-screen bg-bodyBG font-sans antialiased"
+          "min-h-screen bg-bodyBG font-sans antialiased pb-14"
         )}
       >
         {children}

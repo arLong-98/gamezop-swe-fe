@@ -30,17 +30,19 @@ function GameMenu({ categories, allGames }: GameMenuProps) {
         categories={categories}
         activeFilter={activeFilter}
       />
-      <div className="flex flex-wrap gap-5 mt-10">
-        {renderedList.slice(0, 11).map((game) => {
-          return <GameCard key={game.code} gameData={game} />;
-        })}
-        <Link href={`/${activeFilter}`}>
-          <div className="p-3">
-            <div className="group transition-transform w-[187px] h-[278px] bg-blurGradient flex items-center justify-center">
-              <p className="text-3xl group-hover:scale-90 duration-200">
-                View More
-              </p>
-            </div>
+      <div className="flex flex-col tablet:flex-row tablet:max-laptop:overflow-scroll tablet:gap-x-[20px] laptop:flex-wrap laptop:gap-x-[24px] gap-y-[30px] mt-10">
+        {renderedList.length > 0 &&
+          renderedList.slice(0, 11).map((game, index) => {
+            return <GameCard key={index} gameData={game} />;
+          })}
+        <Link
+          className="max-mobile:w-full tablet:max-laptop:min-w-[300px] laptop:w-[200px] largeLaptop:w-[417px] h-[278px]"
+          href={`/${activeFilter}`}
+        >
+          <div className="group w-full transition-transform min-w-[187px] h-[278px] bg-blurGradient flex items-center justify-center">
+            <p className="text-3xl group-hover:scale-90 duration-200">
+              View More
+            </p>
           </div>
         </Link>
       </div>

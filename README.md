@@ -2,35 +2,34 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+1 - Execute **pnpm install** on terminal to install all the dependencies. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2 - Execute **pnpm dev** to run the dev server. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3 - Open the browser and type in the **localhost:3000** in the address bar to run the application on the local machine. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development Journey
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1 - The project is bootstrapped using create-next-app. 
 
-## Learn More
+2 - Migrated from npm to pnpm package manager. 
 
-To learn more about Next.js, take a look at the following resources:
+3 - Added a nvmrc file, to specify the node version in use. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4 - Removed the bopilerplate code present in the next app. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5 - Updated the tsconfig file with a few more rules. 
 
-## Deploy on Vercel
+6 - Updated the tailwind config file for better control on the design system. 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+7 - Leveraged the app directory structure provided by next js to build out pages. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+8 - Leveraged route groups to create a common layout for games page and related routes. 
+
+9 - Took advantage of dynamic route system and getStaticPaths to generate pages during build time (pre-render pages). 
+
+10 - Added server and client components as per the requirement. 
+
+11 - Added PWA functionality by registering a service worker, adding a manifest.json file and the corresponding link tag to make the application downloadable on the system. 
+
+12 - Added suspense to custom UI components to leverage streaming data while rest of the page is shown to the user for a better UX.

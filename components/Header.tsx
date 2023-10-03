@@ -6,7 +6,9 @@ function Header({ navItems }: HeaderProps) {
   return (
     <header className="">
       <div className="hidden md:flex justify-between py-4">
-        <Image src={gamezopLogo} alt="gamezop" />
+        <Link href={"/"}>
+          <Image src={gamezopLogo} alt="gamezop" />
+        </Link>
         <div className="flex gap-5 items-center">
           {navItems.map(({ name, href }) => {
             return (

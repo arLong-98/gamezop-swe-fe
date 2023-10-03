@@ -23,7 +23,7 @@ function Filters({
   }
 
   return (
-    <div className="flex gap-5">
+    <div className="flex flex-wrap gap-5">
       <FilterItem
         onClick={updateActiveFilter}
         filterId="all"

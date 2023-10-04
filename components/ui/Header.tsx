@@ -5,7 +5,7 @@ import gamezopLogoMobile from "@/public/gamezop-sq.webp";
 import SearchContainer from "../SearchContainer";
 import { Suspense } from "react";
 
-function Header({ navItems }: HeaderProps) {
+function Header() {
   return (
     <header className="px-[30px] laptop:px-[70px] bg-headerBG max-w-[1440px] mx-auto">
       <div className="flex justify-between py-7">
@@ -33,10 +33,6 @@ function Header({ navItems }: HeaderProps) {
       </div>
     </header>
   );
-}
-
-interface HeaderProps {
-  navItems: Array<{ name: string; href: string }>;
 }
 
 export default Header;

@@ -1,11 +1,28 @@
-const CACHE_NAME = "gamezop-app-v1";
+const CACHE_NAME = "gamezop-app-v2";
+
+const DELETE_CACHE = ["gamezop-app-v1"];
 
 self.addEventListener("install", (event) => {
+  self.skipWaiting();
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
       cache.addAll(["/"]);
     })()
+  );
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    caches.keys().then((keyList) =>
+      Promise.all(
+        keyList.map((key) => {
+          if (DELETE_CACHE.includes(key)) {
+            return caches.delete(key);
+          }
+        })
+      )
+    )
   );
 });
 
